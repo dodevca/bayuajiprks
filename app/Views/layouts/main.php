@@ -15,9 +15,28 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
                 <a class="navbar-brand" href="<?= base_url() ?>">
-                    <img src="<?= base_url('images/logo-full.png') ?>" class="logo w-100 h-auto">
+                    <img src="<?= base_url('images/logo-full.png') ?>" class="logo d-none d-lg-block">
+                    <img src="<?= base_url('images/logo.png') ?>" class="logo d-lg-none">
                 </a>
-                <div class="collapse navbar-collapse" id="navbar-menu">
+                <div class="d-flex align-item-center justify-content-end gap-2 order-lg-2">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-search text-muted"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg px-2">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-0">
+                                <i class="bi bi-search text-secondary"></i>
+                            </span>
+                            <input type="text" class="form-control border-0" placeholder="Type something . . ." aria-label="Search form" aria-describedby="search">
+                        </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler border-0 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Navbar toggle button">
+                        <i class="bi bi-list text-muted"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-lg-1" id="navbar-menu">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">home</a>
@@ -25,39 +44,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">link</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">link</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">link</a>
+                            <a class="nav-link" href="#">link</a>
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex align-items-center justify-content-end">
-                    <button type="button" class="btn btn-link">
-                        <i class="bi bi-search text-dark"></i>
-                    </button>
-                    <button type="button" class="btn btn-link">
-                        <i class="bi bi-heart text-dark"></i>
-                    </button>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Navbar toggle button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
         </nav>
     </header>
