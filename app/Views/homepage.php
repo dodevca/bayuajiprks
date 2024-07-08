@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up" data-aos-delay="600">
+                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up" data-aos-delay="900">
                     <div class="position-absolute bottom-0 start-50 translate-middle-x">
                         <a href="#" class="btn btn-primary text-white mb-4">Check it out</a>
                     </div>
