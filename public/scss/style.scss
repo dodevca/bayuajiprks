@@ -11,6 +11,7 @@ $headings-font-weight: 700;
 $primary: #3dc961;
 $secondary: #2F4674;
 $border-radius: 1rem;
+$headings-color: $secondary;
 
 // include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../vendor/twbs/bootstrap/scss/variables";
@@ -151,12 +152,12 @@ section {
 
         a {
             @extend .opacity-0;
-            transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.8s ease-in-out;
         }
 
         &:hover,
         &:active,
-        &:focus {
+        &:focus { 
             a {
                 @extend .opacity-100;
             }
