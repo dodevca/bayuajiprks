@@ -50,8 +50,20 @@ header {
     @extend .position-fixed,
     .top-0,
     .start-0,
-    .end-0;
+    .end-0,
+    .py-3;
     z-index: 9999;
+    transition: all 0.5s ease;
+
+    &.active {
+        @extend .bg-white,
+        .shadow-lg,
+        .py-2;
+    }
+}
+
+section {
+    @extend .mb-5;
 }
 
 .form-control,
@@ -98,6 +110,12 @@ header {
     }
 }
 
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #navbar-menu {
     .nav-link {
         &.active {
@@ -108,9 +126,7 @@ header {
 
 #jumbotron {
     .carousel-item {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend .bg-cover;
 
         &::after {
             @extend .position-absolute,
@@ -123,6 +139,31 @@ header {
             .opacity-50,
             .bg-white;
             content: "";
+        }
+    }
+}
+
+#category {
+    .category-item {
+        @extend .position-relative,
+        .bg-cover;
+        aspect-ratio: 1 / 1;
+
+        a {
+            @extend .opacity-0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            a {
+                @extend .opacity-100;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: $spacer;
         }
     }
 }

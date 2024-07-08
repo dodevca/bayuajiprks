@@ -9,10 +9,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('favicon-16x16.png') ?>">
     <link rel="manifest" href="<?= base_url('site.webmanifest') ?>">
     <link rel="stylesheet" href="<?= base_url('css/style.min.css') ?>">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg py-3">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="<?= base_url() ?>">
                     <img src="<?= base_url('images/logo-full.png') ?>" class="logo d-none d-lg-block">
@@ -57,6 +58,9 @@
     </main>
     <footer>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('js/main.js') ?>"></script>
 </body>
 </html>
