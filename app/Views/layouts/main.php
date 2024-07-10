@@ -43,7 +43,7 @@
                             <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">products</a>
+                            <a class="nav-link" href="#">collections</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">about</a>
@@ -60,6 +60,55 @@
         <?= $this->renderSection('main') ?>
     </main>
     <footer>
+        <section class="bg-secondary">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                        <h3 class="text-white mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="col-md-6 text-center my-auto">
+                        <a href="#" class="btn btn-primary btn-lg text-white"><i class="bi bi-envelope me-2"></i>get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="h6 text-dark">Collections</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Lorem</a></li>
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Ipsum</a></li>
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Dolor</a></li>
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Sit Amet</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="h6 text-dark">Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">About</a></li>
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Terms & Conditions</a></li>
+                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="h6 text-dark">Follow Me</h5>
+                        <div class="d-flex align-item-center gap-3">
+                            <a href="#" class="fs-4 text-secondary"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="fs-4 text-secondary"><i class="bi bi-telegram"></i></a>
+                            <a href="#" class="fs-4 text-secondary"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="fs-4 text-secondary"><i class="bi bi-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-0">
+            <div class="container border-top py-4">
+                <p class="text-muted mb-0">&copy; 2024 Bayuajiprks. All rights reserved.</p>
+            </div>
+        </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

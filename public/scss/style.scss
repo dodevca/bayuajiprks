@@ -20,6 +20,7 @@ $headings-color: $secondary;
 // include any default map overrides here
 $btn-padding-x: $spacer * 1.5;
 $btn-padding-y: $spacer * .5;
+$btn-border-radius-lg: $border-radius;
 
 // include remainder of required parts
 @import "../../vendor/twbs/bootstrap/scss/maps";
@@ -118,6 +119,25 @@ section {
     background-repeat: no-repeat;
 }
 
+.bg-layer {
+    &::after {
+        @extend .position-absolute,
+        .d-block,
+        .top-0,
+        .end-0,
+        .bottom-0,
+        .start-0,
+        .z-0,
+        .rounded,
+        .opacity-75;
+        content: "";
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 52%, rgba(255,255,255,1) 100%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 #navbar-menu {
     .nav-link {
         &.active {
@@ -151,19 +171,26 @@ section {
         .bg-cover;
         aspect-ratio: 1 / 1;
 
-        a {
-            @extend .opacity-0;
-            transition: opacity 0.8s ease-in-out;
-        }
-
         &:hover,
         &:active,
         &:focus {
-            @extend .shadow;
+            @extend .shadow,
+            .bg-layer;
 
             a {
                 @extend .opacity-100;
             }
+        }
+
+        > div {
+            @extend .position-relative,
+            .z-1,
+            .h-100;
+        }
+
+        a {
+            @extend .opacity-0;
+            transition: opacity 0.8s ease-in-out;
         }
 
         @include media-breakpoint-down(md) {
@@ -174,17 +201,21 @@ section {
 
 #latest {
     .latest-item {
-        @extend .bg-cover;
+        @extend .position-relative,
+        .bg-cover;
 
         &:hover,
         &:active,
         &:focus {
+            @extend .shadow,
+            .bg-layer;
+
             h4 {
-                @extend .fs-6;
+                transform: translateY(0);
             }
 
             p {
-                @extend .d-block,
+                @extend .visible,
                 .opacity-100;
             }
 
@@ -194,13 +225,18 @@ section {
             }
         }
 
+        > * {
+            @extend .position-relative,
+            .z-1;
+        }
+
         h4 {
-            @extend .fs-3;
-            transition: all 0.5s ease;
+            transform: translateY(2rem);
+            transition: transform 0.5s ease;
         }
 
         p {
-            @extend .d-none,
+            @extend .invisible,
             .opacity-0;
             transition: opacity 0.8s ease-in-out;
         }
