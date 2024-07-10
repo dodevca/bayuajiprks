@@ -43,10 +43,13 @@
                             <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">link</a>
+                            <a class="nav-link" href="#">products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">link</a>
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
                         </li>
                     </ul>
                 </div>

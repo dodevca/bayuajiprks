@@ -16,7 +16,7 @@
                             <span class="badge bg-primary bg-opacity-75 text-white ms-1 mb-3" data-aos="fade-right">Slide 1</span>
                             <h1 class="fs-1">Example headline</h1>
                             <p class="text-muted">Some representative placeholder content for the first slide of the carousel.</p>
-                            <a class="btn btn-secondary rounded-pill" href="#" data-aos="fade-up">Action</a>
+                            <a class="btn btn-secondary" href="#" data-aos="fade-up">action</a>
                         </div>
                     </div>
                 </div>
@@ -50,34 +50,34 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-sm-6 col-md-3">
-                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <h3 class="fs-6 text-center mt-2">Lorem</h3>
+                <div class="category-item p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
+                    <h3 class="fs-5 text-center mt-2">Lorem</h3>
                     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                        <a href="#" class="btn btn-primary text-white mb-4">Check it out</a>
+                        <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <h3 class="fs-6 text-center mt-2">Ipsum</h3>
+                <div class="category-item p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
+                    <h3 class="fs-5 text-center mt-2">Ipsum</h3>
                     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                        <a href="#" class="btn btn-primary text-white mb-4">Check it out</a>
+                        <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <h3 class="fs-6 text-center mt-2">Dolor</h3>
+                <div class="category-item p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
+                    <h3 class="fs-5 text-center mt-2">Dolor</h3>
                     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                        <a href="#" class="btn btn-primary text-white mb-4">Check it out</a>
+                        <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="category-item p-3 rounded shadow" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <h3 class="fs-6 text-center mt-2">Sit Amet</h3>
+                <div class="category-item p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
+                    <h3 class="fs-5 text-center mt-2">Sit Amet</h3>
                     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                        <a href="#" class="btn btn-primary text-white mb-4">Check it out</a>
+                        <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
                     </div>
                 </div>
             </div>
@@ -87,6 +87,36 @@
 <section id="latest">
     <div class="container py-5">
         <h3 class="h2">What's new</h3>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                    <div class="d-flex align-items-start badge p-2 ms-auto mb-auto">
+                        <span class="small">$</span>
+                        <span class="fs-3">40</span>
+                    </div>
+                    <h4 class="mb-3">Lorem Ipsum</h4>
+                    <p class="text-muted text-truncate">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="btn btn-primary text-white me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="latest-item h-100 p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                            <div class="py-5 my-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="latest-item h-100 p-3 rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                            <div class="py-5 my-5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center py-3">
+                <a href="#" class="btn btn-link">show more</a>
+            </div>
+        </div>
     </div>
 </section>
 <?= $this->endSection() ?>

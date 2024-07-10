@@ -19,6 +19,7 @@ $headings-color: $secondary;
 
 // include any default map overrides here
 $btn-padding-x: $spacer * 1.5;
+$btn-padding-y: $spacer * .5;
 
 // include remainder of required parts
 @import "../../vendor/twbs/bootstrap/scss/maps";
@@ -157,7 +158,9 @@ section {
 
         &:hover,
         &:active,
-        &:focus { 
+        &:focus {
+            @extend .shadow;
+
             a {
                 @extend .opacity-100;
             }
@@ -165,6 +168,47 @@ section {
 
         @include media-breakpoint-down(md) {
             margin-bottom: $spacer;
+        }
+    }
+}
+
+#latest {
+    .latest-item {
+        @extend .bg-cover;
+
+        &:hover,
+        &:active,
+        &:focus {
+            h4 {
+                @extend .fs-6;
+            }
+
+            p {
+                @extend .d-block,
+                .opacity-100;
+            }
+
+            .badge {
+                @extend .bg-secondary, 
+                .text-white;
+            }
+        }
+
+        h4 {
+            @extend .fs-3;
+            transition: all 0.5s ease;
+        }
+
+        p {
+            @extend .d-none,
+            .opacity-0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .badge {
+            @extend .bg-transparent,
+            .text-secondary;
+            transition: all 0.5s ease-in-out;
         }
     }
 }
