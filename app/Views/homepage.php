@@ -97,7 +97,7 @@
         <h3 class="h2 mb-4">What's new</h3>
         <div class="row">
             <div class="col-md-6 mb-3">
-                <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="fade-right">
                     <div class="d-flex align-items-start badge p-2 ms-auto mb-auto">
                         <span class="small">$</span>
                         <span class="fs-3">40</span>
@@ -112,7 +112,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                        <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="fade-down-left">
                             <div class="d-flex align-items-start badge p-2 ms-auto mb-auto">
                                 <span class="small">$</span>
                                 <span class="fs-3">40</span>
@@ -124,8 +124,8 @@
                             <a href="#" class="btn btn-primary text-white me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
                         </div>
                     </div>
-                    <div class="col-12 mb-3">
-                        <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)">
+                    <div class="col-12 mb-3"left
+                        <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="fade-up-left">
                             <div class="d-flex align-items-start badge p-2 ms-auto mb-auto">
                                 <span class="small">$</span>
                                 <span class="fs-3">40</span>
