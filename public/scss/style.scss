@@ -20,6 +20,8 @@ $headings-color: $secondary;
 // include any default map overrides here
 $btn-padding-x: $spacer * 1.5;
 $btn-padding-y: $spacer * .5;
+$btn-padding-x-lg: $spacer * 1.5;
+$btn-padding-y-lg: $spacer * .5;
 $btn-border-radius-lg: $border-radius;
 
 // include remainder of required parts
@@ -38,6 +40,7 @@ $btn-border-radius-lg: $border-radius;
 @import "../../vendor/twbs/bootstrap/scss/transitions";
 @import "../../vendor/twbs/bootstrap/scss/nav";
 @import "../../vendor/twbs/bootstrap/scss/navbar";
+@import "../../vendor/twbs/bootstrap/scss/breadcrumb";
 @import "../../vendor/twbs/bootstrap/scss/buttons";
 @import "../../vendor/twbs/bootstrap/scss/dropdown";
 @import "../../vendor/twbs/bootstrap/scss/carousel";
@@ -67,7 +70,7 @@ header {
 }
 
 section {
-    @extend .mb-5;
+    @extend .mb-4;
 }
 
 .btn {
@@ -204,7 +207,7 @@ section {
         &:hover,
         &:active,
         &:focus {
-            @extend .shadow,
+            @extend .shadow-primary,
             .bg-layer;
 
             a {
@@ -237,7 +240,7 @@ section {
         &:hover,
         &:active,
         &:focus {
-            @extend .shadow,
+            @extend .shadow-primary,
             .bg-layer;
 
             h4 {
@@ -295,6 +298,54 @@ section {
 
         i {
             @extend .text-muted;
+        }
+    }
+
+    input[type="checkbox"] {
+        &:checked {
+            + .btn {
+                h2 {
+                    @extend .text-white;
+                }
+            }
+        }
+
+        + .btn {
+            h2 {
+                @extend .text-primary;
+            }
+        }
+    }
+}
+
+#collections {
+    .collections-item {
+        @extend .d-block,
+        .text-decoration-none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            @extend .shadow-primary;
+
+            img {
+                transform: scale(1.2);
+            }
+
+            .badge {
+                @extend .opacity-0;
+            }
+        }
+
+        img {
+            @extend .z-0;
+            aspect-ratio: 1 / 1;
+            transition: transform 0.5s ease-in-out;
+            mix-blend-mode: multiply;
+        }
+
+        .badge {
+            transition: opacity 0.5s ease;
         }
     }
 }

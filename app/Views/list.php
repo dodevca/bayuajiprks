@@ -1,8 +1,9 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('main') ?>
-<section class="mt-5">
-    <div class="container py-5">
+<?= $this->include('partials/breadcrumb') ?>
+<section>
+    <div class="container py-4">
         <form action="#" method="POST" id="search-bar">
             <div class="input-group border rounded p-2 mb-3">
                 <span class="input-group-text bg-white border-0">
@@ -13,13 +14,13 @@
             <div class="d-flex flex-wrap align-items-center justify-content-beetwen gap-3">
                 <div class="d-flex flex-wrap align-items-center gap-2">
                     <input type="checkbox" class="btn-check" id="check-lorem" checked autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-lorem">Lorem</label>
+                    <label class="btn btn-outline-primary" for="check-lorem"><h2 class="fs-6 fw-normal mb-0">Lorem</h2></label>
                     <input type="checkbox" class="btn-check" id="check-ipsum" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-ipsum">Ipsum</label>
+                    <label class="btn btn-outline-primary" for="check-ipsum"><h2 class="fs-6 fw-normal mb-0">Ipsum</h2></label>
                     <input type="checkbox" class="btn-check" id="check-dolor" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-dolor">Dolor</label>
+                    <label class="btn btn-outline-primary" for="check-dolor"><h2 class="fs-6 fw-normal mb-0">Dolor</h2></label>
                     <input type="checkbox" class="btn-check" id="check-sit-amet" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-sit-amet">Sit Amet</label>
+                    <label class="btn btn-outline-primary" for="check-sit-amet"><h2 class="fs-6 fw-normal mb-0">Sit Amet</h2></label>
                 </div>
                 <div class="dropdown ms-auto">
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,6 +47,28 @@
                 </div>
             </div>
         </form>
+    </div>
+</section>
+<section id="collections">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <a href="#" class="collections-item rounded">
+                    <div class="position-relative bg-light overflow-hidden rounded-top">
+                        <img src="<?= base_url('images/collections/1.png') ?>" class="w-100 h-auto">
+                        <span class="badge text-bg-secondary position-absolute top-0 end-0 m-3 z-1">New</span>
+                    </div>
+                    <div class="p-3">
+                        <h4 class="small fw-normal mb-1">Lorem</h4>
+                        <h3 class="h6 text-dark fw-normal mb-1">Lorem Ipsum</h3>
+                        <p class="text-muted mb-0">$40</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 text-center py-3">
+                <a href="#" class="btn btn-link">show more</a>
+            </div>
+        </div>
     </div>
 </section>
 <?= $this->endSection() ?>
