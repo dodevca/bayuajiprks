@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bayuajiprks</title>
+	<title><?= $meta->title ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?= $meta->description ?>" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('apple-touch-icon.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('favicon-16x16.png') ?>">
@@ -20,19 +21,23 @@
                     <img src="<?= base_url('images/logo.png') ?>" class="logo d-lg-none">
                 </a>
                 <div class="d-flex align-item-center justify-content-end gap-2 order-lg-2">
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-link px-2" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-search text-muted"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg px-2">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-0">
-                                <i class="bi bi-search text-secondary"></i>
-                            </span>
-                            <input type="text" class="form-control border-0" placeholder="Type something . . ." aria-label="Search form" aria-describedby="search">
+                    <?php if($meta->name != 'collections'): ?>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-search text-muted"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg px-2 mt-4">
+                                <form action="#" method="POST">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-0">
+                                            <i class="bi bi-search"></i>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Type something . . ." aria-label="Search form" aria-describedby="search">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                     <button class="navbar-toggler border-0 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Navbar toggle button">
                         <i class="bi bi-list text-muted"></i>
                     </button>
@@ -40,16 +45,16 @@
                 <div class="collapse navbar-collapse order-lg-1" id="navbar-menu">
                     <ul class="navbar-nav me-auto my-2 my-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">home</a>
+                            <a class="nav-link<?= $meta->name == 'home' ? ' active' : '' ?>"<?= $meta->name == 'home' ? ' aria-current="page"' : '' ?> href="<?= base_url() ?>">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">collections</a>
+                            <a class="nav-link<?= $meta->name == 'collections' ? ' active' : '' ?>"<?= $meta->name == 'collections' ? ' aria-current="page"' : '' ?>  href="<?= base_url('collections') ?>">collections</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">about</a>
+                            <a class="nav-link<?= $meta->name == 'about' ? ' active' : '' ?>"<?= $meta->name == 'about' ? ' aria-current="page"' : '' ?>  href="<?= base_url('about') ?>">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link<?= $meta->name == 'contact' ? ' active' : '' ?>"<?= $meta->name == 'contact' ? ' aria-current="page"' : '' ?>  href="<?= base_url('contact') ?>">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +72,7 @@
                         <h3 class="text-white mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                     </div>
                     <div class="col-md-6 text-center my-auto">
-                        <a href="#" class="btn btn-primary btn-lg text-white"><i class="bi bi-envelope me-2"></i>get in touch</a>
+                        <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-envelope me-2"></i>get in touch</a>
                     </div>
                 </div>
             </div>

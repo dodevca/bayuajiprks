@@ -54,7 +54,7 @@
                     <div class="p-3">    
                         <h3 class="fs-5 text-center text-dark mt-2">Lorem</h3>
                         <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
+                            <a href="#" class="btn btn-primary mb-4">check it out</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="p-3">    
                         <h3 class="fs-5 text-center text-dark mt-2">Ipsum</h3>
                         <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
+                            <a href="#" class="btn btn-primary mb-4">check it out</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                     <div class="p-3">    
                         <h3 class="fs-5 text-center text-dark mt-2">Dolor</h3>
                         <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
+                            <a href="#" class="btn btn-primary mb-4">check it out</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <div class="p-3">    
                         <h3 class="fs-5 text-center text-dark mt-2">Sit Amet</h3>
                         <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary text-white mb-4">check it out</a>
+                            <a href="#" class="btn btn-primary mb-4">check it out</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                         <h4 class="fs-3 text-dark">Lorem Ipsum</h4>
                         <p class="text-muted text-truncate mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <a href="#" class="btn btn-primary text-white me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
+                    <a href="#" class="btn btn-primary me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -121,10 +121,10 @@
                                 <h4 class="fs-3 text-dark">Lorem Ipsum</h4>
                                 <p class="text-muted text-truncate mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <a href="#" class="btn btn-primary text-white me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
+                            <a href="#" class="btn btn-primary me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
                         </div>
                     </div>
-                    <div class="col-12 mb-3"left
+                    <div class="col-12 mb-3">
                         <div class="d-flex flex-column justify-content-end latest-item h-100 p-4 rounded gap-3" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="fade-up-left">
                             <div class="d-flex align-items-start badge p-2 ms-auto mb-auto">
                                 <span class="small">$</span>
@@ -134,7 +134,7 @@
                                 <h4 class="fs-3 text-dark">Lorem Ipsum</h4>
                                 <p class="text-muted text-truncate mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <a href="#" class="btn btn-primary text-white me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
+                            <a href="#" class="btn btn-primary me-auto"><i class="bi bi-bag me-2"></i>buy or offer</a>
                         </div>
                     </div>
                 </div>
