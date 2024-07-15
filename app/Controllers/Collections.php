@@ -19,4 +19,16 @@ class Collections extends BaseController
     {
         return view('list', $this->data);
     }
+
+    public function detail($id)
+    {
+        $this->data['meta']->title          = "Lorem Ipsum by Bayuajiprks";
+        $this->data['meta']->name           = [
+            'collections',
+            'lorem ipsum'
+        ];
+        $this->data['meta']->description    = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
+        return view('detail', $this->data);
+    }
 }

@@ -53,7 +53,7 @@
     <div class="container pb-5">
         <div class="row">
             <div class="col-6 col-md-4 col-lg-3 mb-3">
-                <a href="#" class="collections-item rounded">
+                <a href="<?= base_url('collections/38388283') ?>" class="collections-item rounded">
                     <div class="position-relative bg-light overflow-hidden rounded-top">
                         <img src="<?= base_url('images/collections/1.png') ?>" class="w-100 h-auto">
                         <span class="badge text-bg-secondary position-absolute top-0 end-0 m-3 z-1">New</span>
