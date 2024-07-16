@@ -15,11 +15,11 @@
                 <div class="d-flex flex-wrap align-items-center gap-2">
                     <input type="checkbox" class="btn-check" id="check-lorem" checked autocomplete="off">
                     <label class="btn btn-outline-primary" for="check-lorem"><h2 class="fs-6 fw-normal mb-0">Lorem</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-ipsum" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="check-ipsum" checked autocomplete="off">
                     <label class="btn btn-outline-primary" for="check-ipsum"><h2 class="fs-6 fw-normal mb-0">Ipsum</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-dolor" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="check-dolor" checked autocomplete="off">
                     <label class="btn btn-outline-primary" for="check-dolor"><h2 class="fs-6 fw-normal mb-0">Dolor</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-sit-amet" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="check-sit-amet" checked autocomplete="off">
                     <label class="btn btn-outline-primary" for="check-sit-amet"><h2 class="fs-6 fw-normal mb-0">Sit Amet</h2></label>
                 </div>
                 <div class="dropdown ms-auto">
