@@ -20,7 +20,7 @@
                                 <h1 class="fs-1"><?= $jumbotron->title ?></h1>
                                 <p class="text-muted"><?= $jumbotron->subtitle ?></p>
                                 <?php if($jumbotron->action): ?>
-                                    <a class="btn btn-secondary btn-lg" href="#" data-aos="fade-up"><?= $jumbotron->action ?><i class="bi bi-arrow-right ms-2"></i></a>
+                                    <a href="<?= base_url($jumbotron->action_url) ?>" class="btn btn-secondary btn-lg" data-aos="fade-up"><?= $jumbotron->action ?><i class="bi bi-arrow-right ms-2"></i></a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <a href="#" class="btn btn-link">show more</a>
+                <a href="<?= base_url('collections') ?>" class="btn btn-link">show more</a>
             </div>
         </div>
     </div>
