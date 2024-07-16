@@ -13,14 +13,10 @@
             </div>
             <div class="d-flex flex-wrap align-items-center justify-content-beetwen gap-3">
                 <div class="d-flex flex-wrap align-items-center gap-2">
-                    <input type="checkbox" class="btn-check" id="check-lorem" checked autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-lorem"><h2 class="fs-6 fw-normal mb-0">Lorem</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-ipsum" checked autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-ipsum"><h2 class="fs-6 fw-normal mb-0">Ipsum</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-dolor" checked autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-dolor"><h2 class="fs-6 fw-normal mb-0">Dolor</h2></label>
-                    <input type="checkbox" class="btn-check" id="check-sit-amet" checked autocomplete="off">
-                    <label class="btn btn-outline-primary" for="check-sit-amet"><h2 class="fs-6 fw-normal mb-0">Sit Amet</h2></label>
+                    <?php foreach($contents->category->list as $category): ?>
+                        <input type="checkbox" class="btn-check" id="check-<?= $category->slug ?>"<?= !$contents->category->selected || $contents->category->selected == $category->slug ? ' checked' : '' ?> autocomplete="off">
+                        <label class="btn btn-outline-primary" for="check-<?= $category->slug ?>"><h2 class="fs-6 fw-normal mb-0"><?= $category->name ?></h2></label>
+                    <?php endforeach; ?>
                 </div>
                 <div class="dropdown ms-auto">
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

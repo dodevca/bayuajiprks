@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\CategoryModel;
+
 class Home extends BaseController
 {
     public function __construct()
@@ -17,6 +19,14 @@ class Home extends BaseController
 
     public function index()
     {
+        $category               = new CategoryModel();
+        $this->data['contents'] = (object) [
+            'category' => (object) [
+                'list' => $category->list()
+            ]
+        ];
+
         return view('homepage', $this->data);
+        // return $this->response->setJSON($this->data);
     }
 }

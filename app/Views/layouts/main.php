@@ -61,7 +61,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="overflow-hidden">
         <?= $this->renderSection('main') ?>
     </main>
     <footer class="bg-light">
@@ -83,20 +83,19 @@
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <h5 class="h6 text-dark">Collections</h5>
+                        <h5 class="h6 text-dark">Menu</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Lorem</a></li>
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Ipsum</a></li>
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Dolor</a></li>
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Sit Amet</a></li>
+                            <li><a href="<?= base_url() ?>" class="fs-6 text-muted text-decoration-none">Home</a></li>
+                            <li><a href="<?= base_url('collections') ?>" class="fs-6 text-muted text-decoration-none">Collections</a></li>
+                            <li><a href="<?= base_url('about') ?>" class="fs-6 text-muted text-decoration-none">About</a></li>
+                            <li><a href="<?= base_url('contact') ?>" class="fs-6 text-muted text-decoration-none">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5 class="h6 text-dark">Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">About</a></li>
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Terms & Conditions</a></li>
-                            <li><a href="#" class="fs-6 text-muted text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="<?= base_url('terms') ?>" class="fs-6 text-muted text-decoration-none">Terms & Conditions</a></li>
+                            <li><a href="<?= base_url('privacy-policy') ?>" class="fs-6 text-muted text-decoration-none">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">

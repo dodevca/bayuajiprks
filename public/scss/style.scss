@@ -119,6 +119,11 @@ section {
     }
 }
 
+.form-control {
+    @extend .px-3,
+    .py-2;
+}
+
 .navbar {
     .navbar-brand {
         .logo {

@@ -49,46 +49,18 @@
 <section id="category">
     <div class="container py-5">
         <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="category-item rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <div class="p-3">    
-                        <h3 class="fs-5 text-center text-dark mt-2">Lorem</h3>
-                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary mb-4">check it out</a>
+            <?php foreach($contents->category->list as $category): ?>
+                <div class="col-sm-6 col-md-3">
+                    <div class="category-item rounded" style="background-image: url(<?= base_url('images/' . $category->cover) ?>)" data-aos="zoom-in-up">
+                        <div class="p-3">    
+                            <h3 class="fs-5 text-center text-dark mt-2"><?= $category->name ?></h3>
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                                <a href="<?= base_url('collections?c=' . $category->slug) ?>" class="btn btn-primary mb-4">check it out</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="category-item rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <div class="p-3">    
-                        <h3 class="fs-5 text-center text-dark mt-2">Ipsum</h3>
-                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary mb-4">check it out</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="category-item rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <div class="p-3">    
-                        <h3 class="fs-5 text-center text-dark mt-2">Dolor</h3>
-                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary mb-4">check it out</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="category-item rounded" style="background-image: url(<?= base_url('images/jumbotron-demo.png') ?>)" data-aos="zoom-in-up">
-                    <div class="p-3">    
-                        <h3 class="fs-5 text-center text-dark mt-2">Sit Amet</h3>
-                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                            <a href="#" class="btn btn-primary mb-4">check it out</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

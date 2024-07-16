@@ -4,9 +4,9 @@
 <?= $this->include('partials/breadcrumb') ?>
 <section id="about">
     <div class="container py-4">
-        <h2 class="mb-4">Get In Touch</h2>
-        <div class="row">
+        <div class="row g-4">
             <div class="col-md-9">
+                <h2 class="mb-4">Get In Touch</h2>
                 <form action="" method="POST">
                     <div class="row g-3 needs-validation" novalidate>
                         <div class="col-md-6">
@@ -52,12 +52,12 @@
             </div>
             <div class="col-md-3">
                 <div class="bg-secondary p-3 rounded">
-                    <h3 class="fs-5 text-white mb-4">My Social Media</h3>
+                    <h2 class="fs-5 text-white mb-4">My Social Media</h2>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#" class="d-flex align-items-center text-white gap-2"><i class="bi bi-instagram fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
-                        <li><a href="#" class="d-flex align-items-center text-white gap-2"><i class="bi bi-telegram fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
-                        <li><a href="#" class="d-flex align-items-center text-white gap-2"><i class="bi bi-twitter-x fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
-                        <li><a href="#" class="d-flex align-items-center text-white gap-2"><i class="bi bi-dribbble fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
+                        <li><a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2"><i class="bi bi-instagram fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
+                        <li><a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2"><i class="bi bi-telegram fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
+                        <li><a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2"><i class="bi bi-twitter-x fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
+                        <li><a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2"><i class="bi bi-dribbble fs-4"></i><span class="text-truncate">loremipsum</span></a></li>
                     </ul>
                 </div>  
             </div>
