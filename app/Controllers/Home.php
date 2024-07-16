@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\CategoryModel;
+use App\Models\JumbotronModel;
 
 class Home extends BaseController
 {
@@ -20,8 +21,10 @@ class Home extends BaseController
     public function index()
     {
         $category               = new CategoryModel();
+        $jumbotron              = new JumbotronModel();
         $this->data['contents'] = (object) [
-            'category' => (object) [
+            'jumbotron' => $jumbotron->list(),
+            'category'  => (object) [
                 'list' => $category->list()
             ]
         ];
