@@ -57,7 +57,7 @@
                     <div class="p-3">
                         <h4 class="small fw-normal mb-1">Lorem</h4>
                         <h3 class="h6 text-dark fw-normal mb-1">Lorem Ipsum</h3>
-                        <p class="text-muted mb-0">$40</p>
+                        <p class="text-muted fw-bold mb-0">$40</p>
                     </div>
                 </a>
             </div>
