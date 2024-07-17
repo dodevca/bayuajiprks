@@ -119,6 +119,22 @@ section {
     }
 }
 
+.navbar-toggler {
+    &[aria-expanded="true"] {
+        .bi-x-lg {
+            @extend .d-inline-block;
+        }
+
+        .bi-list {
+            @extend .d-none;
+        }
+    }
+
+    .bi-x-lg {
+        @extend .d-none;
+    }
+}
+
 .form-control {
     @extend .px-3,
     .py-2;

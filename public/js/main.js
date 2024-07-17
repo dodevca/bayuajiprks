@@ -1,15 +1,22 @@
 $(document).ready(function () {
     // initial elements
-    let nav = $('header')
+    let header          = $('header')
+    let navToggleBtn    = $('.navbar-toggler')
+    let navMenu         = $('#navbar-menu')
 
     // startup functions
     AOS.init()
 
     // event handlers
-    $(window).scroll(function() {
+    $(window).scroll(() => {
         if($(window).scrollTop() > 0)
-            nav.addClass('active')
+            header.addClass('active')
         else
-            nav.removeClass('active')
+            header.removeClass('active')
+    })
+
+    $(navToggleBtn).click(() => {
+        if(!header.hasClass('active') && !navMenu.hasClass('show'))
+            header.addClass('active')
     })
 })

@@ -40,6 +40,7 @@
                     <?php endif; ?>
                     <button class="navbar-toggler border-0 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Navbar toggle button">
                         <i class="bi bi-list text-muted"></i>
+                        <i class="bi bi-x-lg text-muted"></i>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse order-lg-1" id="navbar-menu">
