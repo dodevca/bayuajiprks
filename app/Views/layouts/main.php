@@ -46,16 +46,16 @@
                 <div class="collapse navbar-collapse order-lg-1" id="navbar-menu">
                     <ul class="navbar-nav me-auto my-2 my-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link<?= $meta->name == 'home' ? ' active' : '' ?>"<?= $meta->name == 'home' ? ' aria-current="page"' : '' ?> href="<?= base_url() ?>">home</a>
+                            <a class="nav-link<?= $meta->name == 'home' ? ' active' : '' ?>"<?= $meta->name == 'home' ? ' aria-current="page"' : '' ?> href="<?= base_url() ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link<?= $meta->name == 'collections' ? ' active' : '' ?>"<?= $meta->name == 'collections' ? ' aria-current="page"' : '' ?>  href="<?= base_url('collections') ?>">collections</a>
+                            <a class="nav-link<?= $meta->name == 'collections' ? ' active' : '' ?>"<?= $meta->name == 'collections' ? ' aria-current="page"' : '' ?>  href="<?= base_url('collections') ?>">Collections</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link<?= $meta->name == 'about' ? ' active' : '' ?>"<?= $meta->name == 'about' ? ' aria-current="page"' : '' ?>  href="<?= base_url('about') ?>">about</a>
+                            <a class="nav-link<?= $meta->name == 'about' ? ' active' : '' ?>"<?= $meta->name == 'about' ? ' aria-current="page"' : '' ?>  href="<?= base_url('about') ?>">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link<?= $meta->name == 'contact' ? ' active' : '' ?>"<?= $meta->name == 'contact' ? ' aria-current="page"' : '' ?>  href="<?= base_url('contact') ?>">contact</a>
+                            <a class="nav-link<?= $meta->name == 'contact' ? ' active' : '' ?>"<?= $meta->name == 'contact' ? ' aria-current="page"' : '' ?>  href="<?= base_url('contact') ?>">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -95,7 +95,7 @@
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5 class="h6 text-dark">Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="<?= base_url('terms') ?>" class="fs-6 text-muted text-decoration-none">Terms & Conditions</a></li>
+                            <li><a href="<?= base_url('terms-conditions') ?>" class="fs-6 text-muted text-decoration-none">Terms & Conditions</a></li>
                             <li><a href="<?= base_url('privacy-policy') ?>" class="fs-6 text-muted text-decoration-none">Privacy Policy</a></li>
                         </ul>
                     </div>
