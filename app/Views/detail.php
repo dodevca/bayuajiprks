@@ -5,7 +5,67 @@
 <section id="about">
     <div class="container py-4">
         <div class="row g-4">
-            <div class="col-md-8"></div>
+            <div class="col-md-8">
+                <div id="collections-carousel" class="carousel slide mb-4">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#collections-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#collections-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#collections-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="<?= base_url('images/jumbotron-demo.png') ?>" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="<?= base_url('images/jumbotron-demo.png') ?>" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="<?= base_url('images/jumbotron-demo.png') ?>" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#collections-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#collections-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="mb-4">
+                    <h4 class="h6 mb-3">Details</h4>
+                    <table class="table table-borderless w-auto">
+                        <tbody>
+                            <tr>
+                                <th class="ps-0 fw-normal" scope="row">Lorem</th>
+                                <td>:</td>
+                                <td>Dolor Sit Amet</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-0 fw-normal" scope="row">Lorem</th>
+                                <td>:</td>
+                                <td>Dolor Sit Amet</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-0 fw-normal" scope="row">Lorem</th>
+                                <td>:</td>
+                                <td>Dolor Sit Amet</td>
+                            </tr>
+                            <tr>
+                                <th class="ps-0 fw-normal" scope="row">Lorem</th>
+                                <td>:</td>
+                                <td>Dolor Sit Amet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-4 ">
+                    <h4 class="h6 mb-3">Description</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="mb-4">
                     <h2 class="small fw-normal mb-1">Lorem</h2>
@@ -46,12 +106,6 @@
                         <a href="#" class="fs-4 text-secondary"><i class="bi bi-threads"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <h4 class="h6 mb-4">Description</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
             </div>
         </div>
     </div>
