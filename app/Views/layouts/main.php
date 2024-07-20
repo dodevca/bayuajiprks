@@ -71,7 +71,7 @@
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                            <h3 class="text-white mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <h4 class="text-white mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                         </div>
                         <div class="col-md-6 text-center my-auto">
                             <a href="<?= base_url('contact') ?>" class="btn btn-primary btn-lg"><i class="bi bi-envelope me-2"></i>get in touch</a>

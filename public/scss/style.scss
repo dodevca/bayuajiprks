@@ -49,6 +49,7 @@ $btn-border-radius-lg: $border-radius;
 @import "../../vendor/twbs/bootstrap/scss/forms/input-group";
 @import "../../vendor/twbs/bootstrap/scss/forms/form-check";
 @import "../../vendor/twbs/bootstrap/scss/forms/validation";
+@import "../../vendor/twbs/bootstrap/scss/accordion";
 
 // optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../vendor/twbs/bootstrap/scss/utilities/api";
