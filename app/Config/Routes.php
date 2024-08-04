@@ -16,3 +16,13 @@ $routes->group('collections', static function($routes) {
     $routes->get('/', 'Collections::index');
     $routes->get('(:num)', 'Collections::detail/$1');
 });
+
+$routes->group('admin', static function($routes) {
+    $routes->get('/', 'Admin::index');
+    $routes->get('login', 'Admin::login');
+    $routes->get('logout', 'Admin::logout');
+    $routes->get('layout', 'Admin::layout');
+    $routes->get('orders', 'Admin::orders');
+    $routes->get('collections', 'Admin::collections');
+    $routes->get('settings', 'Admin::settings');
+});
